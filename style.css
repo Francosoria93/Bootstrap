@@ -1,0 +1,50 @@
+.body {background-image: linear-gradient(to left , #F0C27B, #4B1248)}
+.discos { display: flex ;padding-top: 50px; justify-content: space-around; }
+
+.btn {background-color:#4B1248;}
+.remera {width: 20%;text-align: center;
+    position:relative}
+
+.social-bar {position:fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+
+}
+.footer { color: #F0C27B ;background-color: #4B1248;padding: 30px;}
+.condiciones {display: flex; justify-content: space-around; text-align: center;}
+
+.icon {
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all .5s;
+
+}
+.icon-facebook {background-color: #2E406E;
+}
+
+.icon-youtube {background-color: #c02f2f;}
+
+.icon-instagram {background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)}
+
+.icon-twitter {background-color: #339dc5;}
+
+.icon-twitch {background: linear-gradient(315deg, #9500ff,#9500ff, #4e36ff)}
+
+.icon:first-child {
+border-radius: 1rem 0 0 0 0;
+}
+.icon:last-child { border-radius: 0 0 0 0 1rem ;
+}
+
+.icon:hover {
+    border-radius: 1rem 0 0 0 1rem;
+    box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0.42) ;
+}
+
