@@ -1,4 +1,15 @@
+:root {--primario:#F0C27B; --secundario:#4B1248;}
+
 .body {background-image: linear-gradient(to left , #F0C27B, #4B1248)}
+/* HEADER */
+.header {margin: 30px}
+.info {margin: 50px;}
+h1 {font-weight: 200; color: white;}
+.lorem {font-weight: 100; color: white; text-align: center;}
+.quienesSomos {display: flex; justify-content: center; margin: 100px;color: rgb(202, 202, 202); text-decoration: none;}
+.quienesSomos:hover {transition: all .8s; color: white}
+
+/* discos */
 .discos { display: flex ;padding-top: 50px; justify-content: space-around; }
 
 .btn {background-color:#4B1248;}
@@ -15,27 +26,62 @@
     z-index: 100;
 
 }
-.footer { color: #F0C27B ;background-color: #4B1248;padding: 30px;}
-.condiciones {display: flex; justify-content: space-around; text-align: center;}
+/* playlist */
+.TituloLista {color: white;}
 
+ /* home studio */
+ .grid-container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    }
+    .caja3 {background-color: black;
+    color: var(--primario); height: 600px;
+     }
+     .plataformas div {
+         padding: 10px;
+         margin: 20px;
+     }
+    
+    .caja4 {background-image: url(/imagen/Home-Studio.jpg);
+    color: black;
+    height: 600px;}
+    
+    .imagen {width: 20px; height: 5px;}
+    
+    .experiencia3 {color: var(--primario) ; background-color:black;}
+
+/* formulario */
+.formula { display: flex; justify-content: 1fr 2fr; margin: 100px; }
+.tit {font-size: 70px; color: rgb(211, 211, 211);}
+.tit:hover {color: white ;transition: all .9s}
+.form-container {display: flex; flex-direction: column; margin: 10%; color: white; }
+
+/* footer */
+.footer { color: #F0C27B ;background-color: black;padding-top: 40px; display: flex; flex-direction: column;}
+.redes {margin-top: 70px; display: flex; flex-direction: column;}
+.redes a {text-decoration: none;color: white;font-size: 15px; margin: 15px; display: flex}
+.condiciones {display: flex; justify-content: space-around;}
+
+.redes a:hover {color:#F0C27B ;}
 .icon {
+    font-size: 40px;
     border-radius: 50%;
-    color: white;
+    color:rgb(173, 173, 173);
     text-decoration: none;
-    padding: 1rem;
-    transition: all .5s;
+    padding: 30px;
+    transition: all .9s;
 
 }
-.icon-facebook {background-color: #2E406E;
+.icon-facebook:hover {background-color: #2E406E;
 }
 
-.icon-youtube {background-color: #c02f2f;}
+.icon-youtube:hover {background-color: #c02f2f;}
 
-.icon-instagram {background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.icon-instagram:hover {background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)}
 
-.icon-twitter {background-color: #339dc5;}
+.icon-twitter:hover {background-color: #339dc5;}
 
-.icon-twitch {background: linear-gradient(315deg, #9500ff,#9500ff, #4e36ff)}
+.icon-twitch:hover {background: linear-gradient(315deg, #9500ff,#9500ff, #4e36ff) ;}
 
 .icon:first-child {
 border-radius: 1rem 0 0 0 0;
@@ -43,8 +89,33 @@ border-radius: 1rem 0 0 0 0;
 .icon:last-child { border-radius: 0 0 0 0 1rem ;
 }
 
-.icon:hover {
+.icon:hover {color: white
+    ;
     border-radius: 1rem 0 0 0 1rem;
     box-shadow: 0 0 0 .5rem rgba(0, 0, 0, 0.42) ;
 }
+ /* ventana emergente, VIDEO */
+.video {font-size: 800px;display: flex;justify-content: center;}
 
+/* MEDIA QUERIES*/
+
+@media all and (max-width: 768px) { 
+    
+    /* discos */
+.discos {font-size: 10px;display: flex; justify-content: space-around;}
+/* formulario */
+.formula {display: flex; flex-direction: column;}
+.tit {font-size: 40px;}
+.form-container {font-size: 20px;}
+
+/* playlist */
+.subtitulos {display: none !important;}
+
+/* home studio */
+.caja3 {display: none !important ;}
+.caja4 {display: none !important ;}
+.grid-container {display: grid;grid-template-columns: auto; font-size: 20px;}
+
+/* footer */
+.icon { font-size: 18px; border-radius: 20%; padding: 10px;}
+}
